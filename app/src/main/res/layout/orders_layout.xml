@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="10dp"
+
+         >
+        <TextView
+            android:id="@+id/order_user_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="2dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/order_phone_number"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Phone Number"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/order_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/order_phone_number"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/order_address_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address,City"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/order_total_price"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/order_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date,Time"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/order_address_city"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:id="@+id/show_all_products_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_date_time"
+            android:width="150dp"
+            android:text="Display"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttons"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
